@@ -19,7 +19,8 @@ gempath:
 - $1/.gems
 EOF
 
-/usr/local/bin/gem install bundler rack-core-data sequel pg thin --no-rdoc --no-ri | indent
+/usr/local/bin/gem install bundler sequel pg thin --no-rdoc --no-ri | indent
+/usr/local/bin/gem install rack-core-data -v 0.1.1 --no-rdoc --no-ri | indent
 
 cat << EOF > $1/config.ru
 require 'rack/core-data'
