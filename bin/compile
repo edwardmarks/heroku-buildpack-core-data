@@ -20,6 +20,7 @@ gempath:
 EOF
 
 /usr/local/bin/gem install bundler sequel pg thin --no-rdoc --no-ri | indent
+/usr/local/bin/gem install nokogiri -v 1.5.9 --no-rdoc --no-ri | indent
 /usr/local/bin/gem install rack-core-data -v 0.1.0 --no-rdoc --no-ri | indent
 
 cat << EOF > $1/config.ru
